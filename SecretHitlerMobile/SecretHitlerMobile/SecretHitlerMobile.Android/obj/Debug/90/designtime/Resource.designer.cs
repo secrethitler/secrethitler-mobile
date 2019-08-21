@@ -2982,10 +2982,13 @@ namespace SecretHitlerMobile.Droid
 			public const int notify_panel_notification_icon_bg = 2131165484;
 			
 			// aapt resource value: 0x7F07012D
-			public const int tooltip_frame_dark = 2131165485;
+			public const int Title = 2131165485;
 			
 			// aapt resource value: 0x7F07012E
-			public const int tooltip_frame_light = 2131165486;
+			public const int tooltip_frame_dark = 2131165486;
+			
+			// aapt resource value: 0x7F07012F
+			public const int tooltip_frame_light = 2131165487;
 			
 			static Drawable()
 			{

@@ -492,25 +492,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\msturzen\\.nuget\\packages\\": {},
+    "C:\\Users\\thorg\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\msturzen\\OneDrive - Otto Group\\dev\\Secret Hitler\\secrethitler-mobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile.csproj",
+      "projectUniqueName": "D:\\wks\\secrethitler-mobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile.csproj",
       "projectName": "SecretHitlerMobile",
-      "projectPath": "C:\\Users\\msturzen\\OneDrive - Otto Group\\dev\\Secret Hitler\\secrethitler-mobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile.csproj",
-      "packagesPath": "C:\\Users\\msturzen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\msturzen\\OneDrive - Otto Group\\dev\\Secret Hitler\\secrethitler-mobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile\\obj\\",
+      "projectPath": "D:\\wks\\secrethitler-mobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile.csproj",
+      "packagesPath": "C:\\Users\\thorg\\.nuget\\packages\\",
+      "outputPath": "D:\\wks\\secrethitler-mobile\\SecretHitlerMobile\\SecretHitlerMobile\\SecretHitlerMobile\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\msturzen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thorg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
