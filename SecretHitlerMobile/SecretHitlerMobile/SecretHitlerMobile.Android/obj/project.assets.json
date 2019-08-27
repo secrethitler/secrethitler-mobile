@@ -14,6 +14,15 @@
           "lib/netstandard2.0/DryIoc.dll": {}
         }
       },
+      "Flurl/2.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1529,6 +1538,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Flurl": "2.8.2",
           "Prism.DryIoc.Forms": "7.2.0.1367",
           "PusherClient": "1.0.2",
           "Xamarin.Forms": "4.2.0.673161-pre3"
@@ -1570,6 +1580,25 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/DryIoc.xml",
         "lib/portable-net45+win8+wp8+wpa81/DryIoc.dll",
         "lib/portable-net45+win8+wp8+wpa81/DryIoc.xml"
+      ]
+    },
+    "Flurl/2.8.2": {
+      "sha512": "3VEYAqkGTGHgla4xuyEB4d8XGLeMX2k05C4WfI7YmKQHsL7RhoGu3L6h1xsKKTPFWjEL13p09XOIGwD1pQ86dg==",
+      "type": "package",
+      "path": "flurl/2.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.2.8.2.nupkg.sha512",
+        "flurl.nuspec",
+        "lib/net40/Flurl.dll",
+        "lib/net40/Flurl.xml",
+        "lib/netstandard1.0/Flurl.dll",
+        "lib/netstandard1.0/Flurl.xml",
+        "lib/netstandard1.3/Flurl.dll",
+        "lib/netstandard1.3/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
       ]
     },
     "Microsoft.CSharp/4.5.0": {
@@ -5699,6 +5728,7 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
+      "Flurl >= 2.8.2",
       "Prism.DryIoc.Forms >= 7.2.0.1367",
       "PusherClient >= 1.0.2",
       "SecretHitlerMobile >= 1.0.0",
@@ -5752,6 +5782,10 @@
     "frameworks": {
       "monoandroid90": {
         "dependencies": {
+          "Flurl": {
+            "target": "Package",
+            "version": "[2.8.2, )"
+          },
           "Prism.DryIoc.Forms": {
             "target": "Package",
             "version": "[7.2.0.1367, )"

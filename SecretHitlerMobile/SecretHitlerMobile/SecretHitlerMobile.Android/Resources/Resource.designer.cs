@@ -7719,8 +7719,8 @@ namespace SecretHitlerMobile.Droid
 			// aapt resource value: 0x7f08016e
 			public const int Animation_Design_BottomSheetDialog = 2131231086;
 			
-			// aapt resource value: 0x7f080202
-			public const int AppCompatDialogStyle = 2131231234;
+			// aapt resource value: 0x7f080203
+			public const int AppCompatDialogStyle = 2131231235;
 			
 			// aapt resource value: 0x7f08009e
 			public const int Base_AlertDialog_AppCompat = 2131230878;
@@ -8300,6 +8300,9 @@ namespace SecretHitlerMobile.Droid
 			
 			// aapt resource value: 0x7f080201
 			public const int MainTheme_Base = 2131231233;
+			
+			// aapt resource value: 0x7f080202
+			public const int MainTheme_Dark = 2131231234;
 			
 			// aapt resource value: 0x7f08007f
 			public const int Platform_AppCompat = 2131230847;
