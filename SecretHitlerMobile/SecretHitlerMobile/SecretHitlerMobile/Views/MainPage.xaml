@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SecretHitlerMobile.Views.MainPage"
-             BackgroundColor="#E16A57">
+             x:Class="SecretHitlerMobile.Views.MainPage">
 
     <StackLayout Orientation="Vertical">
 		<Image Source="Title.png" VerticalOptions="Fill" Margin="0, 20"></Image>
 
 		<Button Text="Create Game" BackgroundColor="White" TextColor="#E16A57" 
-                HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 60"></Button>
+                HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 60" Command="{Binding ExecuteTestCommand}"></Button>
 
 		<Button Text="Join Game" BackgroundColor="White" TextColor="#E16A57" 
-                HorizontalOptions="Center" Margin="10, 10" Command="{Binding ExecuteTestCommand}"></Button>
+                HorizontalOptions="Center" Margin="10, 10"></Button>
 
 		<Label Text="{Binding UpdateLandingPageLabel}"
-				TextColor="#fefcbf"  HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Roboto" VerticalTextAlignment="Start" FontSize="Large" Margin="30, 40"/>
+				TextColor="#fefcbf"  HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Roboto" VerticalTextAlignment="Start" FontSize="Medium" Margin="30, 40"/>
 
 	</StackLayout>
 

@@ -29,7 +29,7 @@ namespace SecretHitlerMobile.ViewModels
 		{
 			var api = new ApiConnectionController(new HttpClient());
 			await api.CreateGameLobby();
-			UpdateLandingPageLabel = $"ResponseContent: {ApiConnectionController.RESPONSECONTENT} \n IsSuccessful: {ApiConnectionController.ISSUCCESSSTATUSCODE}";
+			UpdateLandingPageLabel = $"Response: {ApiConnectionController.RESPONSECONTENT} \n Successful: {ApiConnectionController.ISSUCCESSSTATUSCODE}";
 		}
 	}
 }

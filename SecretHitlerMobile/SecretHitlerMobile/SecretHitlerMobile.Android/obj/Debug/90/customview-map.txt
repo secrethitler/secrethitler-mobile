@@ -18,6 +18,7 @@ android.support.v7.widget.RecyclerView;C:\bpPrograms\cDev\secrethitler-mobile\Se
 android.support.v7.widget.Toolbar;C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\lp\41\jl\res\layout\rootlayout.xml
 android.support.v7.widget.Toolbar;C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\lp\41\jl\res\layout\shellcontent.xml
 android.support.v7.widget.Toolbar;obj\Debug\90\res\layout\toolbar.xml
+color;obj\Debug\90\res\values\styles.xml
 FrameLayout;C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\lp\41\jl\res\layout\bottomtablayout.xml
 item;C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\lp\41\jl\res\values\styles.xml
 item;obj\Debug\90\res\values\styles.xml
