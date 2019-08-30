@@ -5,15 +5,27 @@
 
     <StackLayout Orientation="Vertical">
 		<Image Source="Title.png" VerticalOptions="Fill" Margin="0, 20"></Image>
+		<Button Text="Create Game" 
+				BackgroundColor="White" 
+				TextColor="#E16A57" 
+                HorizontalOptions="Center" 
+				VerticalOptions="Center" 
+				Margin="10, 60" 
+				Command="{Binding StartCreateGameRequest}"></Button>
 
-		<Button Text="Create Game" BackgroundColor="White" TextColor="#E16A57" 
-                HorizontalOptions="Center" VerticalOptions="Center" Margin="10, 60" Command="{Binding ExecuteTestCommand}"></Button>
+		<Button Text="Join Game"  
+				BackgroundColor="White" 
+				TextColor="#E16A57" 
+                HorizontalOptions="Center" 
+				Margin="10, 10"></Button>
 
-		<Button Text="Join Game" BackgroundColor="White" TextColor="#E16A57" 
-                HorizontalOptions="Center" Margin="10, 10"></Button>
-
-		<Label Text="{Binding UpdateLandingPageLabel}"
-				TextColor="#fefcbf"  HorizontalOptions="Center" VerticalOptions="Center" FontFamily="Roboto" VerticalTextAlignment="Start" FontSize="Medium" Margin="30, 40"/>
+		<Label	Text="{Binding UpdateLandingPageLabel}"
+				TextColor="#fefcbf"  
+				HorizontalOptions="Center" 
+				VerticalOptions="Center" 
+				FontFamily="Roboto" 
+				VerticalTextAlignment="Start" 
+				Margin="30, 40"/>
 
 	</StackLayout>
 

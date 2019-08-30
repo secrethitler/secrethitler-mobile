@@ -3,6 +3,8 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "SecretHitlerMobile.Android.dll" comes first in this list. */
 		"SecretHitlerMobile.Android.dll",
+		"Acr.UserDialogs.dll",
+		"AndHUD.dll",
 		"DryIoc.dll",
 		"Flurl.dll",
 		"FormsViewGroup.dll",

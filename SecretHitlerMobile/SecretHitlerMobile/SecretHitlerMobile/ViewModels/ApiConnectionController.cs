@@ -40,8 +40,6 @@ namespace SecretHitlerMobile.ViewModels
 						RESPONSECONTENT = await response.Content.ReadAsStringAsync();
 						ISSUCCESSSTATUSCODE = response.IsSuccessStatusCode;
 					}
-
-
 				}
 				catch (Exception e)
 				{

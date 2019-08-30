@@ -1,4 +1,6 @@
 C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\android\assets\SecretHitlerMobile.Android.dll
+C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\android\assets\Acr.UserDialogs.dll
+C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\android\assets\AndHUD.dll
 C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\android\assets\DryIoc.dll
 C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\android\assets\Flurl.dll
 C:\bpPrograms\cDev\secrethitler-mobile\SecretHitlerMobile\SecretHitlerMobile\SecretHitlerMobile.Android\obj\Debug\90\android\assets\FormsViewGroup.dll

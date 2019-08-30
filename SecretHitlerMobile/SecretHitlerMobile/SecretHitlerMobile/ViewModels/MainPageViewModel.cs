@@ -17,12 +17,12 @@ namespace SecretHitlerMobile.ViewModels
 			set { SetProperty(ref _updateLandingPageLabel, value); }
 		}
 
-		public DelegateCommand ExecuteTestCommand { get; private set; }
+		public DelegateCommand StartCreateGameRequest { get; private set; }
 
 		public MainPageViewModel(INavigationService navigationService)
 		: base(navigationService)
 		{
-			ExecuteTestCommand = new DelegateCommand(CreateGameLobbyExecute);
+			StartCreateGameRequest = new DelegateCommand(CreateGameLobbyExecute);
 		}
 
 		private async void CreateGameLobbyExecute()
