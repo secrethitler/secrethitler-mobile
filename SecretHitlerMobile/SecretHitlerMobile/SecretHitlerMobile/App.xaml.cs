@@ -29,7 +29,8 @@ namespace SecretHitlerMobile
 		protected override void RegisterTypes(IContainerRegistry containerRegistry)
 		{
 			containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-			
-		}
+            containerRegistry.RegisterForNavigation<LobbyPage, LobbyPageViewModel>();
+
+        }
 	}
 }
