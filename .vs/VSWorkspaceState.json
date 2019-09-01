@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\SecretHitlerMobile.Android",
-    "\\SecretHitlerMobile.Android\\bin",
-    "\\SecretHitlerMobile.Android\\bin\\Debug"
+    "\\SecretHitlerMobile",
+    "\\SecretHitlerMobile.Android"
   ],
-  "SelectedNode": "\\SecretHitlerMobile.Android\\bin\\Debug",
   "PreviewInSolutionExplorer": false
 }

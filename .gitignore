@@ -2,4 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/SecretHitlerMobile/.vs/SecretHitlerMobile/v16/Server/sqlite3/db.lock
+/SecretHitlerMobile/.vs
+/secrethitler-mobile/.vs
