@@ -1,5 +1,4 @@
-﻿using Acr.UserDialogs;
-using Android.App;
+﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
 using Prism;
@@ -16,8 +15,8 @@ namespace SecretHitlerMobile.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-			UserDialogs.Init(this);
-            global::Xamarin.Forms.Forms.Init(this, bundle);
+			Rg.Plugins.Popup.Popup.Init(this, bundle);
+			global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
