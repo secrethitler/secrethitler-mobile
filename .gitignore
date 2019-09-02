@@ -14,8 +14,19 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# Xamarin Components
+Components/
+# ignore Xamarin.Android Resource.Designer.cs files
+**/*.Droid/**/[Rr]esource.[Dd]esigner.cs
+**/*.Android/**/[Rr]esource.[Dd]esigner.cs
+**/Android/**/[Rr]esource.[Dd]esigner.cs
+**/Droid/**/[Rr]esource.[Dd]esigner.cs
+
 # Mono auto generated files
 mono_crash.*
+
+# Xamarin Components
+Components/
 
 # Build results
 [Dd]ebug/
@@ -23,6 +34,7 @@ mono_crash.*
 [Rr]elease/
 [Rr]eleases/
 x64/
+build/
 x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
@@ -68,6 +80,7 @@ StyleCopReport.xml
 *_i.c
 *_p.c
 *_h.h
+*_i.h
 *.ilk
 *.meta
 *.obj
@@ -115,7 +128,7 @@ ipch/
 
 # Visual Studio Trace Files
 *.e2e
-
+.vscode/settings.json
 # TFS 2012 Local Workspace
 $tf/
 
@@ -145,6 +158,7 @@ _TeamCity*
 *.coveragexml
 
 # NCrunch
+*.ncrunch*
 _NCrunch_*
 .*crunch*.local.xml
 nCrunchTemp_*
@@ -186,6 +200,8 @@ publish/
 PublishScripts/
 
 # NuGet Packages
+packages/
+*.lock.json
 *.nupkg
 # NuGet Symbol Packages
 *.snupkg
@@ -223,12 +239,17 @@ _pkginfo.txt
 !?*.[Cc]ache/
 
 # Others
+sql/
+*.Cache
 ClientBin/
+[Ss]tyle[Cc]op.*  
 ~$*
 *~
 *.dbmdl
 *.dbproj.schemaview
 *.jfm
+.DS_Store
+*.bak
 *.pfx
 *.publishsettings
 orleans.codegen.cs
