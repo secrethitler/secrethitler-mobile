@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rg.Plugins.Popup.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,13 @@ namespace SecretHitlerMobile.Views
 		public MainPage()
 		{
 			InitializeComponent();
+		}
+
+		private async void OnUsernameDialogOpenAsync(object sender, EventArgs e)
+		{
+			var page = new UsernameDialog();
+
+			await PopupNavigation.Instance.PushAsync(page);
 		}
 	}
 }
