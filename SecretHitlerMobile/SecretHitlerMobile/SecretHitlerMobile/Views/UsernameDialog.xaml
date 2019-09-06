@@ -23,8 +23,9 @@
 			PositionIn="Bottom"
 			PositionOut="Center"
 			ScaleIn="1"
-			ScaleOut="0.7"
-			DurationIn="700"
+			ScaleOut="0.5"
+			DurationIn="800"
+			DurationOut="800"
 			EasingIn="BounceOut"/>
 	</pages:PopupPage.Animation>
 	<ScrollView
@@ -41,24 +42,18 @@
 					IsClippedToBounds="True"
 					Padding="15, 10, 15, 10"
 					Spacing="3">
-					<!--<Image
-						HorizontalOptions="Center"
-						x:Name="OctocatImage"
-						Margin="10"
-						HeightRequest="150"
-						WidthRequest="150">
-						--><!--<Image.Source>
-							<OnPlatform
-								x:TypeArguments="ImageSource"
-								Android="Cover.png"
-								iOS="github_octocat.png"
-						</Image.Source>--><!--
-					</Image>-->
 					<Entry
 						HorizontalOptions="Center"
 						x:Name="UsernameEntry"
 						Style="{StaticResource EntryStyle}"
 						Placeholder="Username"
+						WidthRequest="150"
+						Margin="0, 5, 0, 40"/>
+					<Entry
+						HorizontalOptions="Center"
+						x:Name="LobbyEntry"
+						Style="{StaticResource EntryStyle}"
+						Placeholder="Lobby-ID"
 						WidthRequest="150"
 						Margin="0, 5, 0, 40"/>
 					<Button
