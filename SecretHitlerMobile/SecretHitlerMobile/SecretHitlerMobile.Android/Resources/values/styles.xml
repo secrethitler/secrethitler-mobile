@@ -1,34 +1,48 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
 
+    <color name="standardDarkRed">#f56565</color>
     <color name="standardRed">#E16A57</color>
+    <color name="highlightRed">#fc8181</color>
+    <color name="standardText200">#fefcbf</color>
+    <color name="standardText300">#faf089</color>
+
 
     <style name="MainTheme" parent="MainTheme.Base">
     </style>
+
     <style name="MainTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
       <!--<item name="android:windowBackground">@drawable/splashscreen_Background</item>-->
     </style>
+
     <!-- Base theme applied no matter what API -->
     <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
-    <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
-    <item name="windowNoTitle">true</item>
-    <item name="android:windowBackground">@drawable/splashscreen_Background</item>
-    <!--We will be using the toolbar so no need to show ActionBar-->
-    <item name="windowActionBar">false</item>
-    <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette -->
-    <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">#fc8181</item>
-    <!-- colorPrimaryDark is used for the status bar -->
-    <item name="colorPrimaryDark">#e53e3e</item>
-    <!-- colorAccent is used as the default value for colorControlActivated
-         which is used to tint widgets -->
-    <item name="colorAccent">#e53e3e</item>
-    <!-- You can also set colorControlNormal, colorControlActivated
-         colorControlHighlight and colorSwitchThumbNormal. -->
-    <item name="windowActionModeOverlay">true</item>
+      <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+      <item name="windowNoTitle">true</item>
+      <item name="android:windowBackground">@drawable/splashscreen_Background</item>
+      <item name="windowActionBar">false</item>
+      <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/standardRed</item>
+      <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/standardRed</item>
+      <!-- colorAccent is used as the default value for colorControlActivated
+           which is used to tint widgets -->
+      <item name="colorAccent">#fefcbf</item>
+      <!--<item name="colorControlActivated">#fefcbf</item>
+      <item name="colorControlHighlight">#fefcbf</item>-->
 
-    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
-  </style>
+      <item name="android:colorPressedHighlight">@color/standardText200</item>
+      <item name="android:colorLongPressedHighlight">@color/standardText200</item>
+      <item name="android:colorFocusedHighlight">@color/standardText200</item>
+      <item name="android:colorActivatedHighlight">@color/highlightRed</item>
+      <item name="android:activatedBackgroundIndicator">@color/standardText200</item>
+
+      <!-- You can also set colorControlNormal, colorControlActivated
+           colorControlHighlight and colorSwitchThumbNormal. -->
+      <item name="windowActionModeOverlay">true</item>
+
+      <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+    </style>
 
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#FF4081</item>

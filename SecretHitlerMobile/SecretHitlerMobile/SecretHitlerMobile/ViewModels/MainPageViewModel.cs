@@ -39,11 +39,11 @@ namespace SecretHitlerMobile.ViewModels
 
         private async void CreateGameLobbyExecute()
 		{
-			var api = new ApiConnectionController(new HttpClient());
+			//var api = new ApiConnectionController(new HttpClient());
             NavigateToLobbyPage();
-            await api.CreateGameLobby();
-			UpdateLandingPageLabel = $"Response: {ApiConnectionController.RESPONSECONTENT} \n Successful: {ApiConnectionController.ISSUCCESSSTATUSCODE}";
-            NavigateToLobbyPage();
+   //         await api.CreateGameLobby();
+			//UpdateLandingPageLabel = $"Response: {ApiConnectionController.RESPONSECONTENT} \n Successful: {ApiConnectionController.ISSUCCESSSTATUSCODE}";
+   //         NavigateToLobbyPage();
 		}
 	}
 }

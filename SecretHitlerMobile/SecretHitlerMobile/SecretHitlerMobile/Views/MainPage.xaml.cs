@@ -17,9 +17,9 @@ namespace SecretHitlerMobile.Views
 
 		private async void OnUsernameDialogOpenAsync(object sender, EventArgs e)
 		{
-			var page = new UsernameDialog();
+			var UsernameDialogPopup = new UsernameDialog();
 
-			await PopupNavigation.Instance.PushAsync(page);
+			await PopupNavigation.Instance.PushAsync(UsernameDialogPopup);
 		}
 	}
 }

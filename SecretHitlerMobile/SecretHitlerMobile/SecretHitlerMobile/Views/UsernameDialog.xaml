@@ -19,14 +19,16 @@
 		</ResourceDictionary>
 	</pages:PopupPage.Resources>
 	<pages:PopupPage.Animation>
-		<animations:ScaleAnimation
-			PositionIn="Bottom"
-			PositionOut="Center"
-			ScaleIn="1"
-			ScaleOut="0.5"
-			DurationIn="800"
-			DurationOut="800"
-			EasingIn="BounceOut"/>
+		<animations:ScaleAnimation 
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8"
+            DurationIn="300"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"/>
 	</pages:PopupPage.Animation>
 	<ScrollView
 			HorizontalOptions="Center"
@@ -35,7 +37,7 @@
 			<Frame
 				x:Name="FrameContainer"
 				Margin="15"
-				CornerRadius="10"
+				CornerRadius="8"
 				HorizontalOptions="Center"
 				BackgroundColor="#fc8181">
 				<StackLayout

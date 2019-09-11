@@ -4,10 +4,21 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SecretHitlerMobile.Views.LobbyPage"
-             BackgroundColor="Black">
+             BackgroundColor="#E16A57">
 
-    <StackLayout Orientation="Vertical">
-        <Image Source="Title.png" VerticalOptions="Fill"></Image>
-    </StackLayout>
+	<StackLayout Orientation="Vertical">
+
+		<Label Text="{Binding UpdateLobbyIdLabel}" FontSize="Medium" FontAttributes="Italic" TextColor="#fefcbf" Margin="10,10,10,10"/>
+
+		<ListView x:Name="UserListView">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Label Margin="10,10" Text="{Binding Name}" TextColor="#fefcbf" FontSize="Medium" VerticalTextAlignment="Center"/>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</StackLayout>
 
 </ContentPage>

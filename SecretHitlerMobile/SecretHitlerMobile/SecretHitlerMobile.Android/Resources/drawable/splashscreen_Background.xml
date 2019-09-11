@@ -2,7 +2,7 @@
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
   <item>
-    <color android:color="#e3644e"></color>
+    <color android:color="#E16A57"></color>
   </item>
   <item>
     <bitmap
