@@ -4,21 +4,29 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SecretHitlerMobile.Views.LobbyPage"
-             BackgroundColor="#E16A57">
+             BackgroundColor="#ff9e80">
 
 	<StackLayout Orientation="Vertical">
 
-		<Label Text="{Binding UpdateLobbyIdLabel}" FontSize="Medium" FontAttributes="Italic" TextColor="#fefcbf" Margin="10,10,10,10"/>
+		<Frame BackgroundColor="#ffd0b0" Margin="0,0,0,0" Padding="10,10,5,10" HasShadow="True" CornerRadius="3">
+			<Label Text="{Binding UpdateLobbyIdLabel}" FontSize="Medium" FontAttributes="Italic" TextColor="#000000" Margin="0,0,0,0"/>
+		</Frame>
 
-		<ListView x:Name="UserListView">
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					<ViewCell>
-						<Label Margin="10,10" Text="{Binding Name}" TextColor="#fefcbf" FontSize="Medium" VerticalTextAlignment="Center"/>
-					</ViewCell>
-				</DataTemplate>
-			</ListView.ItemTemplate>
-		</ListView>
+		<StackLayout Orientation="Vertical">
+
+			<ListView x:Name="UserListView" CachingStrategy="RecycleElement" FlowDirection="LeftToRight">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<!--Text="{Binding Name}"-->
+							<Label Margin="10,20" Text="Some Name" TextColor="#000000" FontSize="Medium" BackgroundColor="Accent"/>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+
+		</StackLayout>
+
 	</StackLayout>
 
 </ContentPage>

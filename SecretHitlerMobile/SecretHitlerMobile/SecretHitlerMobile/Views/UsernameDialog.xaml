@@ -39,7 +39,7 @@
 				Margin="15"
 				CornerRadius="8"
 				HorizontalOptions="Center"
-				BackgroundColor="#fc8181">
+				BackgroundColor="#ff9e80">
 				<StackLayout
 					IsClippedToBounds="True"
 					Padding="15, 10, 15, 10"

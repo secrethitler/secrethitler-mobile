@@ -11,7 +11,7 @@ namespace SecretHitlerMobile.ViewModels
     public class LobbyPageViewModel : BindableBase
     {
 		public string UpdateLobbyIdLabel {
-			get { return _lobbyIdLabelText; }
+			get => _lobbyIdLabelText;
 			set { SetProperty(ref _lobbyIdLabelText, value); }
 		}
 
@@ -26,16 +26,14 @@ namespace SecretHitlerMobile.ViewModels
 
 		public static IList<User> GetUsersList()
 		{
-			UserList = new ObservableCollection<User>() {
+			return UserList ?? (UserList = new ObservableCollection<User>() {
 					new User {
 						Name = "alfred jhonas"
 					},
 					new User {
 						Name = "bette lünasrt"
 					}
-				};
-
-			return UserList;
+				});
 		}
 
 		public void SetLobbyIdText(string id = "LobbyID: 282938"){
