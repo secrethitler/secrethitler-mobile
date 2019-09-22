@@ -17,8 +17,8 @@ namespace SecretHitlerMobile.ViewModels
 		public ApiConnectionController(HttpClient httpClient)
 		{
 			_client = httpClient;
-			_client.BaseAddress = new Uri(string.Format("https://secrethitler.tk", string.Empty));
-			
+			_client.BaseAddress = new Uri(string.Format("https://secrethitler.tk/", string.Empty));
+
 			//HttpConnectionParams.setSoKeepAlive(params, true)
 		}
 
@@ -28,10 +28,11 @@ namespace SecretHitlerMobile.ViewModels
 		public async Task CreateGameLobby(){
 				
 				var data = new Dictionary<string, string> {
-					{"userName", "Maxi"}
+					{"userName", "Thorge"}
 				};
 
-				StringContent content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
+				StringContent content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8,
+					"application/json");
 
 				try
 				{
@@ -45,6 +46,31 @@ namespace SecretHitlerMobile.ViewModels
 				{
 					RESPONSECONTENT = e.ToString();
 				}
+		}
+		
+		public async Task JoinGameLobby(){
+
+			var data = new Dictionary<string, string> 
+			{
+				["userName"] = "Thorge", 
+				["channelName"] = "976641"
+            };
+
+			StringContent content = new StringContent(JsonConvert.SerializeObject(data),
+				Encoding.UTF8, "application/json");
+			
+			try
+			{
+				using (HttpResponseMessage response = await _client.PostAsync("api/game/join", content))
+				{
+					RESPONSECONTENT = await response.Content.ReadAsStringAsync();
+					ISSUCCESSSTATUSCODE = response.IsSuccessStatusCode;
+				}
+			}
+			catch (Exception e)
+			{
+				RESPONSECONTENT = e.ToString();
+			}
 		}
 	}
 }

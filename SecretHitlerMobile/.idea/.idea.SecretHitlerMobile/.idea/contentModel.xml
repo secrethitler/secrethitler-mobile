@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Program Files (x86)\Android\android-sdk\platforms\android-28\data\res" t="IncludeRecursive" />
+    <e p="C:\Users\thorg\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\thorg\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_SecretHitlerMobile.500950544.00" t="ExcludeRecursive" />
+    <e p="D:\wks\secrethitler-mobile\SecretHitlerMobile" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SecretHitlerMobile\SecretHitlerMobile" t="IncludeRecursive">
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="SecretHitlerMobile.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SecretHitlerMobile.csproj" t="IncludeRecursive" />
+        <e p="shmIcon.ico" t="Include" />
+        <e p="ViewModels" t="Include">
+          <e p="ApiConnectionController.cs" t="Include" />
+          <e p="LobbyPageViewModel.cs" t="Include" />
+          <e p="MainPageViewModel.cs" t="Include" />
+          <e p="ViewModelBase.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="LobbyPage.xaml" t="Include" />
+          <e p="LobbyPage.xaml.cs" t="Include" />
+          <e p="MainPage.xaml" t="Include" />
+          <e p="MainPage.xaml.cs" t="Include" />
+        </e>
+      </e>
+      <e p="SecretHitlerMobile\SecretHitlerMobile.Android" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include">
+            <e p="Cover.png" t="Include" />
+            <e p="Title.png" t="Include" />
+          </e>
+          <e p="layout" t="Include">
+            <e p="Tabbar.axml" t="Include" />
+            <e p="Toolbar.axml" t="Include" />
+          </e>
+          <e p="mipmap-hdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-mdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-xhdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-xxhdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-xxxhdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="Resource.Designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="styles.xml" t="Include" />
+          </e>
+        </e>
+        <e p="SecretHitlerMobile.Android.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SecretHitlerMobile\SecretHitlerMobile.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="Assets.xcassets" t="Include">
+          <e p="AppIcon.appiconset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Icon-App-20x20@1x.png" t="Include" />
+            <e p="Icon-App-20x20@2x.png" t="Include" />
+            <e p="Icon-App-20x20@3x.png" t="Include" />
+            <e p="Icon-App-29x29@1x.png" t="Include" />
+            <e p="Icon-App-29x29@2x.png" t="Include" />
+            <e p="Icon-App-29x29@3x.png" t="Include" />
+            <e p="Icon-App-40x40@1x.png" t="Include" />
+            <e p="Icon-App-40x40@2x.png" t="Include" />
+            <e p="Icon-App-40x40@3x.png" t="Include" />
+            <e p="Icon-App-57x57@1x.png" t="Include" />
+            <e p="Icon-App-57x57@2x.png" t="Include" />
+            <e p="Icon-App-60x60@1x.png" t="Include" />
+            <e p="Icon-App-60x60@2x.png" t="Include" />
+            <e p="Icon-App-60x60@3x.png" t="Include" />
+            <e p="Icon-App-72x72@1x.png" t="Include" />
+            <e p="Icon-App-72x72@2x.png" t="Include" />
+            <e p="Icon-App-76x76@1x.png" t="Include" />
+            <e p="Icon-App-76x76@2x.png" t="Include" />
+            <e p="Icon-App-76x76@3x.png" t="Include" />
+            <e p="Icon-App-83.5x83.5@2x.png" t="Include" />
+            <e p="Icon-Small-50x50@1x.png" t="Include" />
+            <e p="Icon-Small-50x50@2x.png" t="Include" />
+            <e p="ItunesArtwork@2x.png" t="Include" />
+          </e>
+          <e p="Contents.json" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="iTunesArtwork@1x.png" t="Include" />
+        <e p="ItunesArtwork@2x.png" t="Include" />
+        <e p="iTunesArtwork@3x.png" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="Default-568h@2x.png" t="Include" />
+          <e p="Default-Portrait.png" t="Include" />
+          <e p="Default-Portrait@2x.png" t="Include" />
+          <e p="Default.png" t="Include" />
+          <e p="Default@2x.png" t="Include" />
+          <e p="LaunchScreen.storyboard" t="Include" />
+        </e>
+        <e p="SecretHitlerMobile.iOS.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SecretHitlerMobile.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

@@ -30,7 +30,6 @@ namespace SecretHitlerMobile
 		{
 			containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<LobbyPage, LobbyPageViewModel>();
-
         }
 	}
 }
