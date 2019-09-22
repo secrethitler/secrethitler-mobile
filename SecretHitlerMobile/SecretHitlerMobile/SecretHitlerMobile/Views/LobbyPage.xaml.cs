@@ -1,4 +1,5 @@
-﻿using SecretHitlerMobile.Models;
+﻿using Prism.Navigation;
+using SecretHitlerMobile.Models;
 using SecretHitlerMobile.ViewModels;
 using System;
 using System.Collections.Generic;

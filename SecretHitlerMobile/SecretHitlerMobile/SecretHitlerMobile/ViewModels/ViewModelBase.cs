@@ -3,6 +3,8 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace SecretHitlerMobile.ViewModels
@@ -15,6 +17,8 @@ namespace SecretHitlerMobile.ViewModels
 		{
 			NavigationService = navigationService;
 		}
+
+		#region INavigationAware
 
 		public virtual void OnNavigatedFrom(INavigationParameters parameters)
 		{
@@ -31,9 +35,15 @@ namespace SecretHitlerMobile.ViewModels
 
 		}
 
+		#endregion
+
+		#region IDestructible
+
 		public virtual void Destroy()
 		{
 
 		}
+
+		#endregion
 	}
 }

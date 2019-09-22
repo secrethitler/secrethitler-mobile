@@ -15,16 +15,17 @@
 				Margin="10, 60" 
 				WidthRequest="150"
 				CornerRadius="5"
-				Command="{Binding InitiateGame}"></Button>
+				IsEnabled="{Binding CanExecuteNavigation}"
+				Command="{Binding InitiateGame}"/>
 
 		<Button Text="Join Game"  
 				BackgroundColor="White" 
 				TextColor="#000000" 
-                HorizontalOptions="Center" 
+				HorizontalOptions="Center" 
 				Margin="10, 10"
 				WidthRequest="150"
 				CornerRadius="5"
-				Clicked="OnUsernameDialogOpenAsync"></Button>
+				Clicked="OnUsernameDialogOpenAsync"/>
 
 		<Label	Text="{Binding UpdateLandingPageLabel}"
 				TextColor="#000000"  

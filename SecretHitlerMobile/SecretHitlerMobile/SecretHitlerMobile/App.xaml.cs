@@ -1,5 +1,6 @@
 ﻿using Prism;
 using Prism.Ioc;
+using Prism.Navigation;
 using SecretHitlerMobile.ViewModels;
 using SecretHitlerMobile.Views;
 using Xamarin.Forms;
@@ -23,7 +24,12 @@ namespace SecretHitlerMobile
 		{
 			InitializeComponent();
 
-			await NavigationService.NavigateAsync("MainPage");
+			var p = new NavigationParameters
+			{
+				{ "CanExecuteNavigation", true }
+			};
+
+			await NavigationService.NavigateAsync("MainPage",p);
 		}
 
 		protected override void RegisterTypes(IContainerRegistry containerRegistry)

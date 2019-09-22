@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
 
-    <color name="primaryColor">#ff9e80</color>
-    <color name="primaryLightColor">#ffd0b0</color>
-    <color name="primaryDarkColor">#c96f53</color>
-    <color name="secondaryColor">#ffe57f</color>
-    <color name="secondaryLightColor">#ffffb0</color>
-    <color name="secondaryDarkColor">#cab350</color>
-    <color name="primaryTextColor">#000000</color>
-    <color name="secondaryTextColor">#000000</color>
-    <!--<color name="standardDarkRed">#f56565</color>
+  <color name="primaryColor">#ff9e80</color>
+  <color name="primaryLightColor">#ffd0b0</color>
+  <color name="primaryDarkColor">#c96f53</color>
+  <color name="secondaryColor">#ffe57f</color>
+  <color name="secondaryLightColor">#ffffb0</color>
+  <color name="secondaryDarkColor">#cab350</color>
+  <color name="primaryTextColor">#000000</color>
+  <color name="secondaryTextColor">#000000</color>
+  <!--<color name="standardDarkRed">#f56565</color>
     <color name="standardRed">#E16A57</color>
     <color name="highlightRed">#fc8181</color>
     <color name="standardText200">#fefcbf</color>
     <color name="standardText300">#faf089</color>-->
 
-    <style name="MainTheme" parent="MainTheme.Base">
-    </style>
+  <style name="MainTheme" parent="MainTheme.Base">
+  </style>
 
-    <style name="MainTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
-      <!--<item name="android:windowBackground">@drawable/splashscreen_Background</item>-->
-    </style>
+  <style name="MainTheme.Splash" parent="Theme.AppCompat.Light.NoActionBar">
+    <!--<item name="android:windowBackground">@drawable/splashscreen_Background</item>-->
+  </style>
 
-    <!-- Base theme applied no matter what API -->
-    <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
-      <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
-      <item name="windowNoTitle">true</item>
-      <item name="android:windowBackground">@drawable/splashscreen_Background</item>
-      <item name="windowActionBar">false</item>
-      <!-- colorPrimary is used for the default action bar background -->
-        <item name="colorPrimary">@color/primaryColor</item>
-      <!-- colorPrimaryDark is used for the status bar -->
-        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
-      <!-- colorAccent is used as the default value for colorControlActivated
+  <!-- Base theme applied no matter what API -->
+  <style name="MainTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--If you are using revision 22.1 please use just windowNoTitle. Without android:-->
+    <item name="windowNoTitle">true</item>
+    <item name="android:windowBackground">@drawable/splashscreen_Background</item>
+    <item name="windowActionBar">false</item>
+    <!-- colorPrimary is used for the default action bar background -->
+    <item name="colorPrimary">@color/primaryColor</item>
+    <!-- colorPrimaryDark is used for the status bar -->
+    <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+    <!-- colorAccent is used as the default value for colorControlActivated
            which is used to tint widgets -->
-      <item name="colorAccent">@color/secondaryColor</item>
-      <!--<item name="colorControlActivated">#fefcbf</item>
+    <item name="colorAccent">@color/secondaryColor</item>
+    <!--<item name="colorControlActivated">#fefcbf</item>
       <item name="colorControlHighlight">#fefcbf</item>-->
 
-      <item name="android:colorPressedHighlight">@color/primaryLightColor</item>
-      <item name="android:colorLongPressedHighlight">@color/primaryDarkColor</item>
-      <item name="android:colorFocusedHighlight">@color/primaryDarkColor</item>
-      <item name="android:colorActivatedHighlight">@color/primaryDarkColor</item>
-      <item name="android:activatedBackgroundIndicator">@color/secondaryLightColor</item>
+    <item name="android:colorPressedHighlight">@color/primaryLightColor</item>
+    <item name="android:colorLongPressedHighlight">@color/primaryDarkColor</item>
+    <item name="android:colorFocusedHighlight">@color/primaryDarkColor</item>
+    <item name="android:colorActivatedHighlight">@color/primaryDarkColor</item>
+    <item name="android:activatedBackgroundIndicator">@color/secondaryLightColor</item>
 
-      <!-- You can also set colorControlNormal, colorControlActivated
+    <!-- You can also set colorControlNormal, colorControlActivated
            colorControlHighlight and colorSwitchThumbNormal. -->
-      <item name="windowActionModeOverlay">true</item>
+    <item name="windowActionModeOverlay">true</item>
 
-      <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
-    </style>
+    <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
+  </style>
 
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
     <item name="colorAccent">#FF4081</item>

@@ -14,17 +14,40 @@
 
 		<StackLayout Orientation="Vertical">
 
-			<ListView x:Name="UserListView" CachingStrategy="RecycleElement" FlowDirection="LeftToRight">
+			<ListView x:Name="UserListView" ItemsSource="{Binding UserList}" VerticalOptions="FillAndExpand" CachingStrategy="RecycleElement" FlowDirection="LeftToRight">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
 							<!--Text="{Binding Name}"-->
-							<Label Margin="10,20" Text="Some Name" TextColor="#000000" FontSize="Medium" BackgroundColor="Accent"/>
+							<Label Margin="10,20" Text="{Binding Name}" TextColor="#000000" FontSize="Medium"/>
 						</ViewCell>
 					</DataTemplate>
 				</ListView.ItemTemplate>
 			</ListView>
 
+			<StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+
+				<Button
+					Text="Let me OUT!"  
+					BackgroundColor="White" 
+					TextColor="#000000" 
+					HorizontalOptions="StartAndExpand" 
+					Margin="10, 10"
+					WidthRequest="150"
+					CornerRadius="5"
+					Command="{Binding NavigateToMainpageCommand}"
+				/>
+
+				<Button
+					Text="Ready!"  
+					BackgroundColor="White" 
+					TextColor="#000000" 
+					HorizontalOptions="EndAndExpand" 
+					Margin="10, 10"
+					WidthRequest="150"
+					CornerRadius="5"
+				/>
+			</StackLayout>
 		</StackLayout>
 
 	</StackLayout>

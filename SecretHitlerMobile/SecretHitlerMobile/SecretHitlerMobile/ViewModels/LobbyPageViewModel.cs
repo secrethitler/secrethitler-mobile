@@ -1,27 +1,34 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
 using SecretHitlerMobile.Models;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
+using System.Threading.Tasks;
 
 namespace SecretHitlerMobile.ViewModels
 {
-    public class LobbyPageViewModel : BindableBase
-    {
-		public string UpdateLobbyIdLabel {
+	public class LobbyPageViewModel : BindableBase
+	{
+		private string _lobbyIdLabelText;
+
+		private readonly INavigationService _navigationService;
+
+		public DelegateCommand NavigateToMainpageCommand {get; private set;}
+
+		public string UpdateLobbyIdLabel
+		{
 			get => _lobbyIdLabelText;
-			set { SetProperty(ref _lobbyIdLabelText, value); }
+			set => SetProperty(ref _lobbyIdLabelText, value);
 		}
 
 		public static IList<User> UserList { get; set; }
 
-		private string _lobbyIdLabelText;
-
-		public LobbyPageViewModel()
+		public LobbyPageViewModel(INavigationService navigationService)
 		{
-			SetLobbyIdText();
+			_navigationService = navigationService;
+			NavigateToMainpageCommand = new DelegateCommand(async() => await NavigateToMainpageAsync());
+			SetLobbyIdText("282938");
 		}
 
 		public static IList<User> GetUsersList()
@@ -32,12 +39,27 @@ namespace SecretHitlerMobile.ViewModels
 					},
 					new User {
 						Name = "bette lünasrt"
+					},
+					new User {
+						Name = "ufffrst skjJIsu"
 					}
-				});
+			});
 		}
 
-		public void SetLobbyIdText(string id = "LobbyID: 282938"){
-			UpdateLobbyIdLabel = id;
+		public void SetLobbyIdText(string id)
+		{
+			UpdateLobbyIdLabel =  "LobbyID: " + id;
+		}
+
+		private async Task NavigateToMainpageAsync()
+		{
+			var param = new NavigationParameters
+			{
+				{ "CanExecuteNavigation", true }
+			};
+
+			await _navigationService.GoBackAsync(param);
+			
 		}
 	}
 }
