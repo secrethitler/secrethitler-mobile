@@ -14,12 +14,11 @@
 
 		<StackLayout Orientation="Vertical">
 
-			<ListView x:Name="UserListView" ItemsSource="{Binding UserList}" VerticalOptions="FillAndExpand" CachingStrategy="RecycleElement" FlowDirection="LeftToRight">
+			<ListView x:Name="UserListView" HasUnevenRows="true" VerticalOptions="FillAndExpand" CachingStrategy="RecycleElement" FlowDirection="LeftToRight">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
-							<!--Text="{Binding Name}"-->
-							<Label Margin="10,20" Text="{Binding Name}" TextColor="#000000" FontSize="Medium"/>
+							<Label Text="{Binding Name}"  IsVisible="True" Margin="10,20" TextColor="#000000" FontSize="Medium"/>
 						</ViewCell>
 					</DataTemplate>
 				</ListView.ItemTemplate>

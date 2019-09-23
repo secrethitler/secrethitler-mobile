@@ -11,7 +11,6 @@ namespace SecretHitlerMobile.ViewModels
 	public class LobbyPageViewModel : BindableBase
 	{
 		private string _lobbyIdLabelText;
-
 		private readonly INavigationService _navigationService;
 
 		public DelegateCommand NavigateToMainpageCommand {get; private set;}
@@ -22,7 +21,7 @@ namespace SecretHitlerMobile.ViewModels
 			set => SetProperty(ref _lobbyIdLabelText, value);
 		}
 
-		public static IList<User> UserList { get; set; }
+		public static ICollection<User> UserList { get; set; }
 
 		public LobbyPageViewModel(INavigationService navigationService)
 		{
@@ -31,17 +30,16 @@ namespace SecretHitlerMobile.ViewModels
 			SetLobbyIdText("282938");
 		}
 
-		public static IList<User> GetUsersList()
+		public static ICollection<User> GetUsersList()
 		{
 			return UserList ?? (UserList = new ObservableCollection<User>() {
 					new User {
+						Id = 1,
 						Name = "alfred jhonas"
 					},
 					new User {
+						Id = 2,
 						Name = "bette lünasrt"
-					},
-					new User {
-						Name = "ufffrst skjJIsu"
 					}
 			});
 		}
