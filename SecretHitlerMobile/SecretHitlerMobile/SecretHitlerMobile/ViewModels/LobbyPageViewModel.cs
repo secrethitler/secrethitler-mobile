@@ -12,6 +12,7 @@ namespace SecretHitlerMobile.ViewModels
 	{
 		private string _lobbyIdLabelText;
 		private readonly INavigationService _navigationService;
+		private string _userCount;
 
 		public DelegateCommand NavigateToMainpageCommand {get; private set;}
 
@@ -21,12 +22,17 @@ namespace SecretHitlerMobile.ViewModels
 			set => SetProperty(ref _lobbyIdLabelText, value);
 		}
 
+		public string UserCount{
+			get=> _userCount;
+			set=> SetProperty(ref _userCount, value);
+		}
 		public static ICollection<User> UserList { get; set; }
 
 		public LobbyPageViewModel(INavigationService navigationService)
 		{
 			_navigationService = navigationService;
 			NavigateToMainpageCommand = new DelegateCommand(async() => await NavigateToMainpageAsync());
+			SetUserCount(GetUsersList());
 			SetLobbyIdText("282938");
 		}
 
@@ -42,6 +48,10 @@ namespace SecretHitlerMobile.ViewModels
 						Name = "bette lünasrt"
 					}
 			});
+		}
+
+		public void SetUserCount(ICollection<User> users){ 
+			UserCount = "User (" + users.Count + "):";
 		}
 
 		public void SetLobbyIdText(string id)

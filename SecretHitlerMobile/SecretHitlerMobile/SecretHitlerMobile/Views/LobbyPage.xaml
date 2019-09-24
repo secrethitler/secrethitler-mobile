@@ -8,11 +8,15 @@
 
 	<StackLayout Orientation="Vertical">
 
-		<Frame BackgroundColor="#ffd0b0" Margin="0,0,0,0" Padding="10,10,5,10" HasShadow="True" CornerRadius="3">
+		<Frame BackgroundColor="#ffd0b0" Margin="0,0" Padding="10,10,5,10" HasShadow="True" CornerRadius="3">
 			<Label Text="{Binding UpdateLobbyIdLabel}" FontSize="Medium" FontAttributes="Italic" TextColor="#000000" Margin="0,0,0,0"/>
 		</Frame>
 
-		<StackLayout Orientation="Vertical">
+		<StackLayout Orientation="Vertical" Margin="0,0">
+
+
+			<Label Text="{Binding UserCount}" Margin="10,10" FontSize="Medium" LineBreakMode="NoWrap" VerticalOptions="Center" HorizontalOptions="StartAndExpand" TextColor="#000000"/>
+			<BoxView HorizontalOptions="StartAndExpand" Color="#000000" WidthRequest="1000"  HeightRequest="1"></BoxView>
 
 			<ListView x:Name="UserListView" HasUnevenRows="true" VerticalOptions="FillAndExpand" CachingStrategy="RecycleElement" FlowDirection="LeftToRight">
 				<ListView.ItemTemplate>
@@ -31,7 +35,7 @@
 					BackgroundColor="White" 
 					TextColor="#000000" 
 					HorizontalOptions="StartAndExpand" 
-					Margin="10, 10"
+					Margin="20,20"
 					WidthRequest="150"
 					CornerRadius="5"
 					Command="{Binding NavigateToMainpageCommand}"
@@ -42,7 +46,7 @@
 					BackgroundColor="White" 
 					TextColor="#000000" 
 					HorizontalOptions="EndAndExpand" 
-					Margin="10, 10"
+					Margin="20, 20"
 					WidthRequest="150"
 					CornerRadius="5"
 				/>
