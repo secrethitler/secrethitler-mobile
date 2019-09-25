@@ -1,14 +1,17 @@
-﻿using Rg.Plugins.Popup.Pages;
+﻿using Prism.Navigation;
+using Rg.Plugins.Popup.Pages;
 using Rg.Plugins.Popup.Services;
+using SecretHitlerMobile.ViewModels;
 using System;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace SecretHitlerMobile.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class UsernameDialog : PopupPage
+	public partial class CreateGamePopup : PopupPage
 	{
-		public UsernameDialog()
+		public CreateGamePopup()
 		{
 			InitializeComponent();
 		}
@@ -16,12 +19,6 @@ namespace SecretHitlerMobile.Views
 		private async void OnClose(object sender, EventArgs e)
 		{
 			await PopupNavigation.Instance.PopAsync();
-		}
-
-		// Backend functionallity in here
-		private void LoginButton_Clicked(object sender, EventArgs e)
-		{
-			
 		}
 	}
 }

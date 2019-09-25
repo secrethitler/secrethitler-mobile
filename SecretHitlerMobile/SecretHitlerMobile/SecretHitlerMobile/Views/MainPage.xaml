@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Main Page View-->
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SecretHitlerMobile.Views.MainPage"
@@ -6,34 +7,35 @@
 	<!--BackgroudnColor Needs to be set in order to not display the splashscreen instead-->
 
 	<StackLayout Orientation="Vertical">
-		<Image Source="Title.png" VerticalOptions="Fill" Margin="0, 20"></Image>
+		<Image Source="Title.png" VerticalOptions="Fill" Margin="0, 40"></Image>
+		
 		<Button Text="Create Game" 
 				BackgroundColor="White" 
 				TextColor="#000000" 
                 HorizontalOptions="Center" 
-				VerticalOptions="Center" 
-				Margin="10, 60" 
+				VerticalOptions="CenterAndExpand" 
+				Margin="10, 40" 
 				WidthRequest="150"
 				CornerRadius="5"
-				IsEnabled="{Binding CanExecuteNavigation}"
+				IsEnabled="{Binding CanExecuteNavigationMainpage}"
 				Command="{Binding InitiateGame}"/>
 
 		<Button Text="Join Game"  
 				BackgroundColor="White" 
 				TextColor="#000000" 
-				HorizontalOptions="Center" 
-				Margin="10, 10"
+				HorizontalOptions="Center"
+				VerticalOptions="StartAndExpand" 
+				Margin="0, 10"
 				WidthRequest="150"
 				CornerRadius="5"
 				Clicked="OnUsernameDialogOpenAsync"/>
 
 		<Label	Text="{Binding UpdateLandingPageLabel}"
-				TextColor="#000000"  
-				HorizontalOptions="Center" 
-				VerticalOptions="Center" 
-				FontFamily="Roboto" 
-				VerticalTextAlignment="Start" 
-				Margin="30, 40"/>
+			TextColor="#000000"  
+			HorizontalOptions="Center" 
+			VerticalOptions="StartAndExpand" 
+			FontFamily="Roboto"
+			Margin="30, 10"/>
 
 	</StackLayout>
 

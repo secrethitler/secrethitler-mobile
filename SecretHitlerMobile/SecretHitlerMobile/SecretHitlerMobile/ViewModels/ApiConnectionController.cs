@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 
 namespace SecretHitlerMobile.ViewModels
 {
+	//Backend API
 	class ApiConnectionController
 	{
 		private static HttpClient _client = new HttpClient(new HttpClientHandler());
@@ -25,6 +26,7 @@ namespace SecretHitlerMobile.ViewModels
 		public static string RESPONSECONTENT;
 		public static bool ISSUCCESSSTATUSCODE;
 
+		//testing Backend http request
 		public async Task CreateGameLobby(){
 				
 				var data = new Dictionary<string, string> {

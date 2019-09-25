@@ -9,11 +9,6 @@
   <color name="secondaryDarkColor">#cab350</color>
   <color name="primaryTextColor">#000000</color>
   <color name="secondaryTextColor">#000000</color>
-  <!--<color name="standardDarkRed">#f56565</color>
-    <color name="standardRed">#E16A57</color>
-    <color name="highlightRed">#fc8181</color>
-    <color name="standardText200">#fefcbf</color>
-    <color name="standardText300">#faf089</color>-->
 
   <style name="MainTheme" parent="MainTheme.Base">
   </style>
@@ -47,7 +42,6 @@
     <!-- You can also set colorControlNormal, colorControlActivated
            colorControlHighlight and colorSwitchThumbNormal. -->
     <item name="windowActionModeOverlay">true</item>
-
     <item name="android:datePickerDialogTheme">@style/AppCompatDialogStyle</item>
   </style>
 

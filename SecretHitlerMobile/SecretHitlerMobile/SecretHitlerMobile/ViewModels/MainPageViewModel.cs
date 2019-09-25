@@ -1,22 +1,29 @@
 ﻿using Prism.Commands;
 using Prism.Navigation;
+using Rg.Plugins.Popup.Services;
+using SecretHitlerMobile.Models;
+using SecretHitlerMobile.Views;
 using System.Threading.Tasks;
 
 namespace SecretHitlerMobile.ViewModels
 {
+	//Main Page ViewModel
 	public class MainPageViewModel : ViewModelBase, INavigatedAware
 	{
-		private string _updateLandingPageLabel;
-		private bool _canExecuteNavigation;
-
 		private readonly INavigationService _navigationService;
+		private string _updateLandingPageLabel;
+		private bool _canExecuteNavigationMainpage;
 
+		#region Commands
 		public DelegateCommand InitiateGame { get; private set; }
+		public DelegateCommand NavigateToLobby { get; private set; }
+		#endregion
 
-		public bool CanExecuteNavigation 
-		{ 
-			get => _canExecuteNavigation;
-			set => SetProperty(ref _canExecuteNavigation, value);
+		#region Properties
+		public bool CanExecuteNavigationMainpage
+		{
+			get => _canExecuteNavigationMainpage;
+			set => SetProperty(ref _canExecuteNavigationMainpage, value);
 		}
 
 		public string UpdateLandingPageLabel
@@ -24,37 +31,56 @@ namespace SecretHitlerMobile.ViewModels
 			get => _updateLandingPageLabel;
 			set => SetProperty(ref _updateLandingPageLabel, value);
 		}
+		#endregion
 
+		#region Constructors
 		public MainPageViewModel(INavigationService navigationService)
 		: base(navigationService)
 		{
-			InitiateGame = new DelegateCommand(CreateGameLobbyExecute);
+			//bind commands
+			InitiateGame = new DelegateCommand(OnCreateGameOpenAsync);
+			NavigateToLobby = new DelegateCommand(CreateGameLobbyExecute);
 			_navigationService = navigationService;
+		}
+		#endregion
+
+		#region Methods
+		private async void CreateGameLobbyExecute()
+		{
+			await PopupNavigation.Instance.PopAllAsync();
+			await NavigateToLobbyPage();
 		}
 
 		private async Task NavigateToLobbyPage()
 		{
+			CanExecuteNavigationMainpage = false;
 			await _navigationService.NavigateAsync("LobbyPage");
 		}
 
-		private async void CreateGameLobbyExecute()
+		private async void OnCreateGameOpenAsync()
 		{
-			CanExecuteNavigation = false;
-			await NavigateToLobbyPage();
-			//var api = new ApiConnectionController(new HttpClient());
-			//await api.CreateGameLobby();
-			//UpdateLandingPageLabel = $"Response: {ApiConnectionController.RESPONSECONTENT} \n Successful: {ApiConnectionController.ISSUCCESSSTATUSCODE}";
-
+			var createGamePopup = new CreateGamePopup();
+			await PopupNavigation.Instance.PushAsync(createGamePopup);
 		}
 
+		#endregion
+
+		/// <summary>
+		/// Called when the implementer has been navigated away from.
+		/// </summary>
+		/// <param name="parameters">The navigation parameters.</param>
 		public override void OnNavigatedFrom(INavigationParameters parameters)
 		{
-			CanExecuteNavigation = false;
+			CanExecuteNavigationMainpage = false;
 		}
 
+		/// <summary>
+		/// Called when the implementer has been navigated to.
+		/// </summary>
+		/// <param name="parameters">The navigation parameters.</param>
 		public override void OnNavigatedTo(INavigationParameters parameters)
 		{
-			CanExecuteNavigation = parameters.GetValue<bool>("CanExecuteNavigation");
+			CanExecuteNavigationMainpage = parameters.GetValue<bool>("CanExecuteNavigation");
 		}
 	}
 }

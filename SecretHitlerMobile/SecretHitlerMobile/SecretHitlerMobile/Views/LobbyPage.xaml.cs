@@ -24,7 +24,7 @@ namespace SecretHitlerMobile.Views
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			UserListView.ItemsSource = LobbyPageViewModel.GetUsersList();
+			UserListView.ItemsSource = LobbyPageViewModel.GetUserList();
 		}
 
 		/// <summary>

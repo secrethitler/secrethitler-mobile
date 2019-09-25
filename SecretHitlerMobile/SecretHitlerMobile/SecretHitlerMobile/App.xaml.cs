@@ -36,7 +36,8 @@ namespace SecretHitlerMobile
 		{
 			containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<LobbyPage, LobbyPageViewModel>();
+			containerRegistry.RegisterForNavigation<GameScreen, GameScreenViewModel>();
 
-        }
+		}
 	}
 }

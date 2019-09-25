@@ -13,11 +13,11 @@ namespace SecretHitlerMobile.Views
 			InitializeComponent();
 		}
 
+		//Opens the Dialog for Joining a Game
 		private async void OnUsernameDialogOpenAsync(object sender, EventArgs e)
 		{
-			var UsernameDialogPopup = new UsernameDialog();
-			await PopupNavigation.Instance.PushAsync(UsernameDialogPopup);
+			var usernameDialogPopup = new UsernameDialog();
+			await PopupNavigation.Instance.PushAsync(usernameDialogPopup);
 		}
-
 	}
 }

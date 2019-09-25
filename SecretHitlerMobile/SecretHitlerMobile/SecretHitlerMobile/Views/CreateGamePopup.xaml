@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--Dialog for Joining a Lobby-->
-<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
-			 xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="SecretHitlerMobile.Views.UsernameDialog">
+<!--Popup for Creating a new Game-->
+<pages:PopupPage 
+			xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+			xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            x:Class="SecretHitlerMobile.Views.CreateGamePopup">
 	<pages:PopupPage.Resources>
 		<ResourceDictionary>
 			<Style x:Key="EntryStyle" TargetType="Entry">
@@ -47,26 +48,19 @@
 					Spacing="3">
 					<Entry
 						HorizontalOptions="Center"
-						x:Name="UsernameEntry"
+						x:Name="CreateGameUsernameEntry"
 						Style="{StaticResource EntryStyle}"
 						Placeholder="Username"
 						WidthRequest="150"
-						Margin="0, 5, 0, 40"/>
-					<Entry
-						HorizontalOptions="Center"
-						x:Name="LobbyEntry"
-						Style="{StaticResource EntryStyle}"
-						Placeholder="Lobby-ID"
-						WidthRequest="150"
-						Margin="0, 5, 0, 40"/>
+						Margin="0, 5, 0, 50"/>
 					<Button
 						Margin="10, 5"
 						BackgroundColor="white"
 						HorizontalOptions="Fill"
-						x:Name="LoginButton"
-						Text="Login"
+						x:Name="CreateGameButton"
+						Text="Create the frickin Game!"
 						Style="{StaticResource ButtonStyle}"
-						Clicked="LoginButton_Clicked">		
+						Command="{Binding NavigateToLobby}">
 						<Button.HeightRequest>
 							<OnPlatform x:TypeArguments="x:Double" Android="40" iOS="30"/>
 						</Button.HeightRequest>

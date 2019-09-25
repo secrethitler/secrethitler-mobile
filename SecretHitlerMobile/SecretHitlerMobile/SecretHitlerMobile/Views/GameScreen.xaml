@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Game Screen View--!>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+			 BackgroundColor="#ff9e80"
+             x:Class="SecretHitlerMobile.Views.GameScreen">
+	<ContentPage.Content>
+
+		<StackLayout Orientation="Vertical">
+
+			<StackLayout Orientation="Horizontal" Margin="0,0" >
+				<Button
+					Text="Policies" 
+					BackgroundColor="#ffd0b0" 
+					TextColor="#000000" 
+					HorizontalOptions="StartAndExpand" 
+					VerticalOptions="StartAndExpand"  
+					WidthRequest="205"
+					HeightRequest="60"
+					Margin="0,0"
+					CornerRadius="0">
+				</Button>
+
+				<Button
+					Text="Roles" 
+					BackgroundColor="#ffd0b0" 
+					TextColor="#000000" 
+					HorizontalOptions="EndAndExpand" 
+					VerticalOptions="StartAndExpand"  
+					WidthRequest="205"
+					Margin="0,0"
+					HeightRequest="60"
+					CornerRadius="0">
+				</Button>
+			</StackLayout>
+
+			<StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" Margin="20,40">
+				<Image Source="policy_fascist.png" WidthRequest="100" HeightRequest="150" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Margin="40,20"/>
+				<Image Source="policy_liberal.png" WidthRequest="100" HeightRequest="150" VerticalOptions="Start" HorizontalOptions="EndAndExpand" Margin="40,20"/>
+			</StackLayout>
+
+			<StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand">
+				<Button Text="Back to Lobby" 
+					BackgroundColor="White" 
+					TextColor="#000000" 
+					HorizontalOptions="Center" 
+					VerticalOptions="Center" 
+					Margin="25, 25" 
+					WidthRequest="150"
+					CornerRadius="5"
+					Command="{Binding NavigateBackToLobby}"/>
+			</StackLayout>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -4,7 +4,8 @@ using System.Text;
 
 namespace SecretHitlerMobile.Models
 {
-	public class User
+	//User model
+	public class User	
 	{
 		public long Id { get; set; }
 		public string Name {get; set;}
